@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class ='text-info bg-black text-center'>Test Of Dhaka</h1>
+
+
+{% load static %}
+<div class="d-flex row flex-wrap align-items-center pt-5">
+    <div class = "col-4 ps-4">
+        <h2 class = 'text-success'>Welcome To Test of Dhaka</h2> <br>
+        <b>Test of Dhaka is one of the best restaurant in Dhaka city. <br>
+            Here we serve our customers very carefully. Here your can find many delicious food with lowest cost. <br> Our foods are fully  hygenic and qualify controlled <h4 class = 'text-info pt-5'> You are welcome to our restaurant with your family or friends</h4></b>
+    </div>
+    <div class = "col-8">
+       
+        <img src="{% static 'images/restaurant.jpg' %}" style = 'width: 90%; height: 100%'>
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class = "d-flex flex-wrap justify-content-center">
+
+        {% for data in meal %}
+
+            <div class="card m-2" style="width: 18rem;">
+                <img src="{{data.strCategoryThumb}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">{{data.strCategory}}</h5>
+                <p class="card-text">{{ data.strCategoryDescription |truncatewords:10 }}</p>
+                <a class = 'btn btn-success' href="#">Show Details</a>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock content %}

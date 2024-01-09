@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<div class = 'd-flex row mt-5'>
+    <div class = "col-5 justify-content-center align-items-center d-flex">
+        <div>
+            <h1 class = 'text-success text-center'>About us</h1>
+            <b class = 'text-allert'>Hello! This is Test Of Dhaka Team. <br> We havebeen surviving people since 3 decades. <br> We survive people safe and healty foods in our restaurant.</b>
+            <br> <br>
+             <a href="#" class = 'btn btn-info' style = "margin-left: 130px">Contact with us</a>
+        </div>
+    </div>
+    <div class ="col-7">
+        <img style = 'width: 90%' src="{% static 'about_us_images/about us.jpg' %}" alt="This is image text">
+    </div>
+</div>
+
+{% endblock content %}
